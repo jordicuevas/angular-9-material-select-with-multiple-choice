@@ -1,0 +1,9 @@
+<mat-form-field appearance="fill">
+
+<mat-label>Seleccione el rol</mat-label>
+<mat-select color="primary" multiple [(value)]="rolesSelected" class="role-width">
+  <mat-option *ngFor="let roles of rolesByCompany; let i = index" [value]="roles">
+    {{ roles }}
+  </mat-option>
+</mat-select>
+</mat-form-field>
